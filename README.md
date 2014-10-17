@@ -28,7 +28,7 @@ FIXME: listing of options this app accepts.
 
 ## License
 
-Copyright © 2014 Tero Paloheimo
+Copyright © 2014 Q-Dance, Tero Paloheimo
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
