@@ -37,4 +37,10 @@
   (insert-from-urls ["http://www.q-dance.com/harderstylestop1000/2014/list/1000-901"
                      "http://www.q-dance.com/harderstylestop1000/2014/list/900-801"
                      "http://www.q-dance.com/harderstylestop1000/2014/list/800-701"
-                     "http://www.q-dance.com/harderstylestop1000/2014/list/700-601"]))
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/700-601"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/600-501"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/500-401"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/400-301"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/300-201"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/200-101"
+                     "http://www.q-dance.com/harderstylestop1000/2014/list/100-001"]))
