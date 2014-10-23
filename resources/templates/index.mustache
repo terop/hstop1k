@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Q-Dance Harder Styles Top 1000 songs</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <h3>All songs</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>Place</td>
+                    <td>Artist</td>
+                    <td>Song</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#songs}}
+                <tr>
+                    <td>{{place}}</td>
+                    <td>{{artist}}</td>
+                    <td>{{song}}</td>
+                </tr>
+                {{/songs}}
+            </tbody>
+        </table>
+    </body>
+</html>

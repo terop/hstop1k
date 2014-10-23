@@ -1,7 +1,6 @@
 (ns hstop1k.db
   (:require [korma.core :as kc]
-            [korma.db :as kd])
-  (:gen-class))
+            [korma.db :as kd]))
 
 ;; The korma DB reference
 (kd/defdb db
@@ -16,6 +15,12 @@
   "Inserts one row to the songs table"
   [place artist song]
   (kc/insert songs
-             (kc/values {:place place
-                         :artist artist
-                         :song song})))
+    (kc/values {:place place
+                :artist artist
+                :song song})))
+
+(defn select-songs
+  "Returns all the songs in the DB as a vector of maps"
+  []
+  (vec (kc/select songs
+         (kc/order :place :ASC))))
