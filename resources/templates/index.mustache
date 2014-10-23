@@ -3,15 +3,16 @@
     <head>
         <title>The Q-Dance Harder Styles Top 1000 songs</title>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/tablesorter.default.css">
     </head>
     <body>
-        <h3>All songs</h3>
-        <table>
+        <h2>All songs</h2>
+        <table class="tablesorter">
             <thead>
                 <tr>
-                    <td>Place</td>
-                    <td>Artist</td>
-                    <td>Song</td>
+                    <th>Place</th>
+                    <th>Artist</th>
+                    <th>Song</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,5 +25,20 @@
                 {{/songs}}
             </tbody>
         </table>
+        <br>
+        Song data &copy; Q-Dance 2014
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="/jquery.tablesorter.min.js"></script>
+        <script src="/jquery.tablesorter.widgets.min.js"></script>
+        <script>
+            $(function(){
+	        $('table').tablesorter({
+	            widgets        : ['zebra', 'columns'],
+	            usNumberFormat : false,
+	            sortReset      : true,
+	            sortRestart    : true
+	        });
+	    });
+        </script>
     </body>
 </html>

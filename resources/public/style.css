@@ -1,4 +1,12 @@
-body{
+body {
     font-family: "Arial", sans-serif;
 }
 
+thead > tr > th {
+    text-align: left;
+    font-weight: bold;
+}
+
+table.tablesorter {
+    width: 60%;
+}
