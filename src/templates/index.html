@@ -6,7 +6,8 @@
         <link rel="stylesheet" type="text/css" href="/tablesorter.default.css">
     </head>
     <body>
-        <h2>All songs</h2>
+        <h3>The Q-Dance Harder Styles Top 1000 songs</h3>
+        <h4>All songs</h4>
         <table class="tablesorter">
             <thead>
                 <tr>
@@ -16,29 +17,29 @@
                 </tr>
             </thead>
             <tbody>
-                {{#songs}}
-                <tr>
-                    <td>{{place}}</td>
-                    <td>{{artist}}</td>
-                    <td>{{song}}</td>
-                </tr>
-                {{/songs}}
+                {% for s in songs %}
+                    <tr>
+                        <td>{{s.place}}</td>
+                        <td>{{s.artist}}</td>
+                        <td>{{s.song}}</td>
+                    </tr>
+                {% endfor %}
             </tbody>
         </table>
         <br>
         Song data &copy; Q-Dance 2014
-        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="/jquery.tablesorter.min.js"></script>
         <script src="/jquery.tablesorter.widgets.min.js"></script>
         <script>
             $(function(){
-	        $('table').tablesorter({
-	            widgets        : ['zebra', 'columns'],
-	            usNumberFormat : false,
-	            sortReset      : true,
-	            sortRestart    : true
-	        });
-	    });
+                $('table').tablesorter({
+                    widgets        : ['zebra', 'columns'],
+                    usNumberFormat : false,
+                    sortReset      : true,
+                    sortRestart    : true
+                });
+            });
         </script>
     </body>
 </html>
